@@ -1,0 +1,11 @@
+library(ggplot2)
+library(tidyverse)
+age <- c(34,45,25,22,26,28)
+colors <- c("red","green","blue","yellow","orange")
+barplot(age,col=colors,names.arg = age,main = "Age comparison")
+library(rmarkdown)
+peng <- read.csv("C:/Users/91994/OneDrive/Desktop/Data_sets/penguins.csv")
+View(peng)
+mean_pen <- mean(peng$body_mass_g,na.rm =TRUE)
+print(mean_pen)
+

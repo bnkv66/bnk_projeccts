@@ -1,0 +1,51 @@
+---
+title: "Edinburgh Biodiversity"
+author: Narendra Kumar
+date: 22/jul/2023
+output: html_document
+---
+ere are a few common formatting commands:
+
+*Italic*
+
+Italic
+
+**Bold**
+
+Bold
+
+This is `code` in text
+
+This is code in text
+
+# Header 1
+
+Header 1
+## Header 2
+
+Header 2
+Note that when a # symbol is placed inside a code chunk it acts as a normal R comment, but when placed in text it controls the header size.
+
+* Unordered list item
+
+Unordered list item
+1. Ordered list item
+
+Ordered list item
+[Link](https://www.google.com)
+
+Link
+
+$A = \pi \times r^{2}$
+```{r}
+library(ggplot2)
+library(tidyverse)
+age <- c(34,45,25,22,26,28)
+colors <- c("red","green","blue","yellow","orange")
+barplot(age,col=colors,names.arg = age,main = "Age comparison")
+library(rmarkdown)
+peng <- read.csv("C:/Users/91994/OneDrive/Desktop/Data_sets/penguins.csv")
+View(peng)
+mean_pen <- mean(peng$body_mass_g,na.rm =TRUE)
+print(mean_pen)
+```

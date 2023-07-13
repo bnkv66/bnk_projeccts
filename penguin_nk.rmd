@@ -1,0 +1,12 @@
+---
+title: "R Notebook"
+author: "Narendra Kumar"
+date : "11/07/2023"
+output: html_document
+---
+```{r}
+library(ggplot2)
+library(palmerpenguins)
+library(tidyverse)
+```
+
